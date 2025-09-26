@@ -1,0 +1,30 @@
+---
+import "../assets/styles/global.css"
+import HeaderComponent from "../components/HeaderComponent.astro"
+import FooterComponent from "../components/FooterComponent.astro"
+
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>T&G Music</title>
+	</head>
+
+	<body>
+		<header><HeaderComponent/></header>
+		<main>
+
+			<slot />
+
+		</main>
+		
+		<footer><FooterComponent/></footer>
+
+	</body>
+
+</html>
