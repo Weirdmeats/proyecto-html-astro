@@ -2,8 +2,8 @@
 
 Astro+tailwind4/vite
 
-
-/
+El proyecto contiene html, astro, javascript, css con tailwind 4
+//
 ├── public/
 │   └── favicon.svg
 ├── src
