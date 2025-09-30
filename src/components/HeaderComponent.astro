@@ -1,12 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HeaderComponent</title>
-</head>
-<body>
-    
+---
+import MenuItems from "./MenuItems.astro"
+---
+
+
+
 <!--header -->
 <header class="flex flex-col bg-[#394855] text-white">
     <!--header principal-->
@@ -15,7 +12,7 @@
         <div class="flex items-center gap-3 flex-wrap">
             <!--logo-->
             <a href="index.html">
-                <img src="assets/images/general/logo.png" alt="logo" class="h-[70px] w-[70px] sm:h-20 sm:w-20 lg:h-[90]">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF8bFfS3efLddmkDUd6ZN0vRmg01uod2nXeQ&s" alt="logo" class="h-[70px] w-[70px] sm:h-20 sm:w-20 lg:h-[90]">
             </a>
             <!--marca-->
             <a href="index.html" class="text-xl sm:text-2xl lg:text-lg text-white font-bold hover:bg-red-400 rounded-sm px-2 py-1">T&G Music©</a>
@@ -23,12 +20,9 @@
             <h3 class="text-gray-300 text-xs sm:text-sm mt-1 mb-2 relative -top-1">Tienda de instrumentos musicales online!</h3>
         </div>
         <!--navbar-->
-        <nav class="flex flex-wrap justify-center md:justify-end gap-2 mt-4 md:mt-0 mb-1 items-center space-x-4">
-            <a href="index.html" class="text-gray-300 hover:bg-red-400 rounded px-2 py-1 text-sm">Inicio</a>
-            <a href="nosotros.html" class="text-gray-300 hover:bg-red-400 rounded px-2 py-1 text-sm">Nosotros</a>
-            <a href="blog.html" class="text-gray-300 hover:bg-red-400 rounded- px-2 py-1 text-sm">Blog</a>
-            <a href="contacto.html" class="text-gray-300 hover:bg-red-400 rounded- px-2 py-1 text-sm">Contacto</a>
-        </nav>
+        <!--adaptacion del codigo  para simplificarlo
+        .crear menu con const y moverlo con map.-->
+                <MenuItems />
     </div>
     <!--header inferior-->
     <div class="w-full bg-slate-400">
@@ -126,5 +120,3 @@
 </header>
 
     
-</body>
-</html>
