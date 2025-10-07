@@ -1,0 +1,10 @@
+---
+import {ItemDropMenu } from "../data/ItemDropMenu"
+---
+
+<div class="relative">
+    { ItemDropMenu.map((item)=>
+    <a href= {item.href} class="bg-red-200 rounded-xl text-black px-4 py-2 text-sm font-semibold hover:bg-red-400 block">{item.categoria}</a>
+
+)}
+</div>

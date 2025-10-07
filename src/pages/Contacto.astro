@@ -1,0 +1,66 @@
+---
+import Layout from '../layouts/Layout.astro'
+
+---
+
+
+<Layout>
+    
+<!--main contacto-->
+<main class="flex-grow bg-gradient-to-br from-gray-500 via-white to-red-300 mb-10 pb-20">
+
+  <!--contacto-->
+  <div class="container mx-auto p-8 grid grid-cols-1 md:grid-cols-2 items-start gap-10">
+    <!-- columna 1-->
+    <div class="flex justify-center mt-10">
+      <form class="bg-white p-4 text-center rounded-2xl w-full max-w-md py-6 space-y-5" action="">
+
+        <h1 class="text-2xl font-semibold text-gray-700">Envíanos tu solicitud de contacto</h1>
+        
+        <div class="flex flex-col space-y-2">
+          <h3 class="text-xl text-gray-700">Nombre</h3>
+          <input type="text" placeholder="Ingresa tu nombre" class="rounded-lg w-full h-10 text-base text-gray-800 p-4">
+        </div>
+
+        <div class="flex flex-col space-y-2">
+          <h3 class="text-xl text-gray-700">Email</h3>
+          <input type="email" placeholder="Ingresa tu email" class="rounded-lg w-full h-10 text-base text-gray-800 p-4">
+        </div>
+
+        <div class="flex flex-col space-y-2">
+          <h3 class="text-xl text-gray-700">Mensaje</h3>
+          <textarea class="rounded-lg p-4" name="mensaje" id="mensaje" placeholder="Ingresa tu mensaje"></textarea>
+        </div>
+
+        <div class="flex flex-col space-y-2">
+          <button class="px-12 py-2 bg-red-300 rounded-lg hover:bg-red-200" type="submit">Enviar</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- columna 2 -->
+    <div class="flex justify-center mt-10">
+      <div class="bg-white p-5 text-start rounded-2xl w-full max-w-md py-3">
+        <h1 class="text-2xl font-semibold text-gray-700 text-center">Contactos</h1>
+
+        <div class="flex flex-col space-y-1">
+          <h3 class="text-lg font-bold my-4">Redes sociales</h3>
+          <ul class="text-gray-800 text-md">
+            <li><a href="https://www.facebook.com/fender.es/?locale=es_LA">Facebook</a></li>
+            <li><a href="https://www.instagram.com/fender_chile/?hl=es">Instagram</a></li>
+            <li><a href="https://web.whatsapp.com/">Whatsapp +56973945235</a></li>
+          </ul>
+        </div>
+
+        <div class="flex flex-col space-y-1">
+          <h3 class="text-lg font-bold my-4">Política de envíos</h3>
+          <p class="text-gray-800 text-md">Solo realizamos envíos nacionales por el momento, ya que para realizar un envío internacional tendríamos que contar con una autorización de aduanas, la cual no poseemos.</p>
+        </div>
+      </div>
+    </div>
+
+   
+  </div>
+</main>
+    
+</Layout>

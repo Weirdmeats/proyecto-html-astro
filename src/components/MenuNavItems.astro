@@ -1,0 +1,11 @@
+---
+import { ItemNavMenu } from "../data/ItemNavMenu";
+---
+
+<nav class="flex flex-wrap justify-center md:justify-end gap-2 mt-4 md:mt-0 mb-1 items-center space-x-4">
+            {ItemNavMenu.map((item) => (
+                <a href={item.href} class="text-gray-300 hover:bg-red-400 rounded px-2 py-1 text-sm">{item.texto}</a>
+            
+            
+            ))}
+</nav>
