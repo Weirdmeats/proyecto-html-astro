@@ -15,7 +15,7 @@ export const ItemProductCard: ProductCardItems[] = [
     { 
         categoria: "Guitarras", 
         nombre:"Fender Stratocaster", 
-        imagen:"https://audiomusicacl.vtexassets.com/arquivos/ids/191413/1-guitarra-electrica-fender-american-vintage-ii-1957-stratocaster-2-color-sunburst-1113234.jpg v=638525238674170000", 
+        imagen:"https://audiomusicacl.vtexassets.com/arquivos/ids/191413/1-guitarra-electrica-fender-american-vintage-ii-1957-stratocaster-2-color-sunburst-1113234.jpg", 
         href:"./blog/guitarra-fender-stratocaster.html#guitarra_fender_stratocaster", 
         precio:1
     },

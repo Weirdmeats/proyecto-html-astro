@@ -1,18 +1,25 @@
 ---
 import { ItemProductCard } from "../data/ItemProductCard";
-const { nombre, imagen, href, precio} = Astro.props;
 ---
-    
-    <div class="bg-white w-full max-w-xs rounded-lg shadow-md overflow-hidden flex flex-col justify-between h-[420px]">
-        <div class="w-full h-[180px] overflow-hidden">
-                <img src={imagen} alt={`Imagen de ${nombre}`} class="w-full h-full object-cover">
+   <!--
+    <section class="flex flex-wrap gap-10">
+    { ItemProductCard.map((item)=>(
+        <div class="bg-white w-full max-w-xs rounded-lg shadow-md overflow-hidden flex flex-col justify-between h-[420px]">
+
+             <div class="w-full h-[180px] overflow-hidden">
+                <img src={item.imagen} alt={`Imagen de ${item.nombre}`} class="w-full h-full object-cover">
             </div>
+
             <div class="p-4 flex flex-col gap-2">
-                <h2 class="text-lg font-semibold text-gray-800 whitespace-nowrap overflow-hidden text-ellipsis">{nombre}</h2>
-                <span class="text-base font-bold text-gray-900">${precio} CLP</span>
-                    
+                <h2 class="text-lg font-semibold text-gray-800 whitespace-nowrap overflow-hidden text-ellipsis">{item.nombre}</h2>
+                <span class="text-base font-bold text-gray-900">${item.precio} CLP</span>        
             </div>
+
             <div class="p-4 pt-0">
-            <a href={href} class="bg-red-400 hover:bg-red-500 text-white text-sm font-semibold px-4 py-2 rounded-lg shadow transition-colors duration-300 w-full block text-center">Ver detalles</a>
-        </div>
-    </div>
+            <a href={item.href} class="bg-red-400 hover:bg-red-500 text-white text-sm font-semibold px-4 py-2 rounded-lg shadow transition-colors duration-300 w-full block text-center">Ver detalles</a>
+            </div>
+        </div>  
+
+        ))}
+    </section>
+    --> 

@@ -1,8 +1,11 @@
-
+#Carpetas excluidas por mi
 dist/
 .astro/
 .vscode/
+.idea/
 node_modules/
+
+#Carpetas excluidas por recomendacion de astro
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
@@ -10,5 +13,4 @@ pnpm-debug.log*
 .env
 .env.production
 .DS_Store
-.idea/
-node_modules/
+
