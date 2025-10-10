@@ -1,25 +1,35 @@
 ---
-import { ItemProductCard } from "../data/ItemProductCard";
+import { ProductCategory } from "../data/ItemProductCard";
 ---
-   <!--
-    <section class="flex flex-wrap gap-10">
-    { ItemProductCard.map((item)=>(
-        <div class="bg-white w-full max-w-xs rounded-lg shadow-md overflow-hidden flex flex-col justify-between h-[420px]">
+    <section class="grid grid-cols-3 gap-10 justify-items-center pt-20 pb-20">
 
-             <div class="w-full h-[180px] overflow-hidden">
-                <img src={item.imagen} alt={`Imagen de ${item.nombre}`} class="w-full h-full object-cover">
+        { ProductCategory.map((item)=>(
+            <div>
+                <div class="bg-white w-full max-w-xs rounded-lg shadow-md overflow-hidden flex flex-col justify-center text-center h-[450px]">
+                    <h1 class="text-xl font-semibold text-gray-800 bg-gray-300 pt-2 pb-2">{item.categoria}</h1>
+                <div class="w-[300px] h-[300px] overflow-hidden">
+                    <img src={item.imagen} alt={`Imagen de ${item.marca}`} class="w-full h-full object-cover">
+                </div>
+
+                <div class="p-2 flex flex-col gap-2">
+                    <h2 class="text-lg font-semibold text-gray-800  overflow-hidden text-ellipsis">{item.marca} {item.modelo}</h2>
+                    <span class="text-base font-bold text-gray-900">${item.precio} CLP</span>        
+                </div>
+                
+                <div class="p-2 pt-0 m-1">
+                    <a href={item.href}><button class="bg-red-400 hover:bg-red-500 text-white text-sm font-semibold px-5 py-1 rounded-lg shadow transition-colors duration-300 w-full block text-center" >Ver detalles</button></a>
+                </div>
+          </div>  
+                
+
+                
             </div>
 
-            <div class="p-4 flex flex-col gap-2">
-                <h2 class="text-lg font-semibold text-gray-800 whitespace-nowrap overflow-hidden text-ellipsis">{item.nombre}</h2>
-                <span class="text-base font-bold text-gray-900">${item.precio} CLP</span>        
-            </div>
-
-            <div class="p-4 pt-0">
-            <a href={item.href} class="bg-red-400 hover:bg-red-500 text-white text-sm font-semibold px-4 py-2 rounded-lg shadow transition-colors duration-300 w-full block text-center">Ver detalles</a>
-            </div>
-        </div>  
-
-        ))}
+        )) }
+    
     </section>
-    --> 
+
+        
+       
+           
+   

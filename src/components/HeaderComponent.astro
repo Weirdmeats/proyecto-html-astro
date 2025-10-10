@@ -1,23 +1,24 @@
 ---
+import MenuDropItems from "./MenuDropItems.astro"
 import MenuNavItems from "./MenuNavItems.astro"
 ---
 
 
 
 <!--header -->
-<header class="flex flex-col bg-[#394855] text-white">
+<header class="flex flex-col bg-[#394855] text-white ">
     <!--header principal-->
     <div class="w-full max-w-screen-xl px-4 mx-auto flex flex-col md:flex-row justify-between items-center py-6">
         <!--logo+marca-->
         <div class="flex items-center gap-3 flex-wrap">
             <!--logo-->
-            <a href="index.html">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF8bFfS3efLddmkDUd6ZN0vRmg01uod2nXeQ&s" alt="logo" class="h-[70px] w-[70px] sm:h-20 sm:w-20 lg:h-[90]">
+            <a href="/">    
+                <img src="../assets/astro.svg" alt="logo" class="h-[70px] w-[70px] sm:h-20 sm:w-20 lg:h-[90]">
             </a>
             <!--marca-->
-            <a href="index.html" class="text-xl sm:text-2xl lg:text-lg text-white font-bold hover:bg-red-400 rounded-sm px-2 py-1">T&G Music©</a>
+            <a href="/" class="text-2xl sm:text-2xl lg:text-lg text-white font-bold hover:bg-red-400 rounded-sm px-2 py-1">T&G Music©</a>
             <!--mensaje-->
-            <h3 class="text-gray-300 text-xs sm:text-sm mt-1 mb-2 relative -top-1">Tienda de instrumentos musicales online!</h3>
+            <h3 class="text-gray-300 text-lg sm:text-sm mt-1 mb-2 relative -top-1">Tienda de instrumentos musicales online!</h3>
         </div>
         <!--navbar-->
         <!--adaptacion del codigo  para simplificarlo
@@ -34,88 +35,13 @@ import MenuNavItems from "./MenuNavItems.astro"
             <!--dropdowns-->
             <div class="flex  bg-slate-400 w-auto space-x-2 ">
                 <!--dropdown guitarras -->
-                <div class="relative group">
-                    <a href="blog.html#guitarras" class="bg-red-200 rounded-xl text-black px-4 py-2 text-sm font-semibold hover:bg-red-400 block">Guitarras</a>
-                    <div class="absolute top-full left-0 hidden group-hover:flex flex-wrap bg-white shadow-lg z-10 max-w-screen overflow-auto p-4 space-x-4 gap-4">
-                        <div class="w-full">
-                            <div class="font-bold text-gray-700 mb-2 text-base"><a href="blog.html#guitarra_fender">Fender</a></div>
-                            <ul class="text-sm text-gray-600 space-y-1">
-                                <li><a href="./blog/guitarra-fender-stratocaster.html" class="block px-2 py-1 hover:bg-gray-100 rounded">Stratocaster</a></li>
-                            </ul>
-                        </div>
-                        <div class="w-full">
-                            <div class="font-bold text-gray-700 mb-2 text-base"><a href="blog.html#guitarra_gibson">Gibson</a></div>
-                            <ul class="text-sm text-gray-600 space-y-1">
-                                <li><a href="./blog/guitarra-gibson-lespaul.html" class="block px-2 py-1 hover:bg-gray-100 rounded">Les Paul</a></li>
-
-                            </ul>
-                        </div>
-                        <div class="w-full">
-                            <div class="font-bold text-gray-700 mb-2 text-base"><a href="blog.html#guitarra_paul">Paul RS</a></div>
-                            <ul class="text-sm text-gray-600 space-y-1">
-                                <li><a href="./blog/guitarra-paul-standard.html" class="block px-2 py-1 hover:bg-gray-100 rounded">SE Standard</a></li>
-
-                            </ul>
-                        </div>
-
-                    </div>
+                <div class="justify-center justify-items-center">
+                    <MenuDropItems/>
                 </div>
 
-                <!--dropdown bajos -->
-                <div class="relative group w-auto items-center ">
-                    <a href="../pages/blog" class="bg-red-200 rounded-xl text-black px-4 py-2 text-sm font-semibold hover:bg-red-400 block">Bajos</a>
-                    <div class="absolute top-full left-0 hidden group-hover:flex flex-wrap bg-white shadow-lg z-10 w-max sm:min-w-[250px] overflow-auto p-4 gap-4">
-                        <div class="w-full">
-                            <div class="font-bold text-gray-700 mb-2"><a href="blog.html#bajo_fender">Fender</a></div>
-                            <ul class="text-sm text-gray-600 space-y-1">
-                                <li><a href="./blog/bajo-fender-mustang.html" class="block px-2 py-1 hover:bg-gray-100 rounded">Mustang Bass</a></li>
-
-                            </ul>
-                        </div>
-                        <div class="w-full">
-                            <div class="font-bold text-gray-700 mb-2"><a href="blog.html#bajo_cort">Cort</a></div>
-                            <ul class="text-sm text-gray-600 space-y-1">
-                                <li><a href="./blog/bajo-cort-a5p.html" class="block px-2 py-1 hover:bg-gray-100 rounded">A5plus</a></li>
-
-                            </ul>
-                        </div>
-                        <div class="w-full">
-                            <div class="font-bold text-gray-700 mb-2"><a href="">Warwick</a></div>
-                            <ul class="text-sm text-gray-600 space-y-1">
-                                <li><a href="./blog/bajo-warwick-thumb.html" class="block px-2 py-1 hover:bg-gray-100 rounded">Thumb</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!--dropdown amplificadores -->
-                <div class="relative group w-auto items-center">
-                    <a href="blog.html#amplificadores" class="bg-red-200 rounded-xl text-black px-4 py-2 text-sm font-semibold hover:bg-red-400 block">Amplificadores</a>
-                    <div class="absolute top-full left-0 hidden group-hover:flex flex-wrap bg-white shadow-lg z-10 w-max max-w-full overflow-auto p-4 gap-4">
-                        <div class="w-full">
-                            <div class="font-bold  text-gray-700 mb-2"><a href="blog.html#amplificadores_fender">Fender</a></div>
-                            <ul class="text-sm text-gray-600 space-y-1">
-                                <li><a href="./blog/amplificador-fender-twin.html" class="block px-2 py-1 hover:bg-gray-100 rounded">Twin reverb</a></li>
-                            </ul>
-                        </div>
-                        <div class="w-full">
-                            <div class="font-bold text-gray-700 mb-2"><a href="blog.html#amplificadores_marshall">Marshall</a></div>
-                            <ul class="text-sm text-gray-600 space-y-1">
-                                <li><a href="./blog/amplificador-marshall-jcm800.html" class="block px-2 py-1 hover:bg-gray-100 rounded">JCM800</a></li>
-
-                            </ul>
-                        </div>
-                        <div class="w-full">
-                            <div class="font-bold text-gray-700 mb-2"><a href="blog.html#amplificadores_vox">Vox</a></div>
-                            <ul class="text-sm text-gray-600 space-y-1">
-                                <li><a href="../page/" class="block px-2 py-1 hover:bg-gray-100 rounded">AC30</a></li>
-
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
+                    
+                    
+                   
 
 
             </div>
