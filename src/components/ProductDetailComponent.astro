@@ -1,0 +1,25 @@
+---
+import { Producto } from "../data/ItemProduct";
+---
+    <section class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-6 py-10">
+            
+        {Producto.map((item)=>(
+            <div class="flex justify-center items-center">
+            <div class="w-full max-w-md h-[300px] sm:h-[360px] md:h-[400px] overflow-hidden rounded-xl shadow-md">
+                <img src={item.imagen} alt="Gibson Les Paul" class="w-full h-full object-cover"/>
+            </div>
+             </div>
+
+            <div class="flex flex-col justify-center gap-6">
+                <h1 class="text-2xl sm:text-3xl font-semibold text-gray-900">{item.marca} {item.modelo}</h1>
+                    <p class="text-base sm:text-lg text-gray-700">{item.descripcion}</p>
+                <div class="text-xl font-bold text-gray-800">$ {item.precio} CLP</div>
+
+                <div>
+                    <input type="number" placeholder="Cantidad" class="w-full max-w-xs px-4 py-2 rounded-full border border-gray-300 text-gray-800"/>
+                </div>
+
+                    <button class="bg-red-400 hover:bg-red-500 text-white font-semibold px-6 py-3 rounded-xl w-full max-w-xs">Agregar al carrito</button>
+            </div>
+        ))} 
+    </section>

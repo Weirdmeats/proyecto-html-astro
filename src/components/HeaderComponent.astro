@@ -1,9 +1,8 @@
 ---
-import MenuDropItems from "./MenuDropItems.astro"
-import MenuNavItems from "./MenuNavItems.astro"
+import ItemNavMenu from "./MenuNavComponent.astro"
+import ItemDropMenu from "./MenuDropCategoryComponent.astro"
+
 ---
-
-
 
 <!--header -->
 <header class="flex flex-col bg-[#394855] text-white ">
@@ -13,21 +12,17 @@ import MenuNavItems from "./MenuNavItems.astro"
         <div class="flex items-center gap-3 flex-wrap">
             <!--logo-->
             <a href="/">    
-                <img src="../assets/astro.svg" alt="logo" class="h-[70px] w-[70px] sm:h-20 sm:w-20 lg:h-[90]">
+                <img src="https://cdn-icons-png.flaticon.com/512/820/820644.png" alt="logo" class="h-[70px] w-[70px] sm:h-20 sm:w-20 lg:h-[90]">
             </a>
             <!--marca-->
-            <a href="/" class="text-2xl sm:text-2xl lg:text-lg text-white font-bold hover:bg-red-400 rounded-sm px-2 py-1">T&G Music©</a>
+            <a href="/" class="text-xl sm:text-2xl lg:text-2 text-white font-bold hover:bg-red-400 rounded-sm px-2 py-1">T&G Music©</a>
             <!--mensaje-->
             <h3 class="text-gray-300 text-lg sm:text-sm mt-1 mb-2 relative -top-1">Tienda de instrumentos musicales online!</h3>
         </div>
-        <!--navbar-->
-        <!--adaptacion del codigo  para simplificarlo
-        .crear menu con const y moverlo con map.-->
+        <!--navbar y crear menu con const y moverlo con map.-->
 
-
-        <MenuNavItems />
-
-
+        <!--Lista del menu Header -->
+        <ItemNavMenu />
     </div>
     <!--header inferior-->
     <div class="w-full bg-slate-400">
@@ -36,14 +31,8 @@ import MenuNavItems from "./MenuNavItems.astro"
             <div class="flex  bg-slate-400 w-auto space-x-2 ">
                 <!--dropdown guitarras -->
                 <div class="justify-center justify-items-center">
-                    <MenuDropItems/>
+                    <ItemDropMenu/>        
                 </div>
-
-                    
-                    
-                   
-
-
             </div>
         </div>
     </div>

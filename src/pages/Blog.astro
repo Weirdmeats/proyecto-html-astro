@@ -1,18 +1,19 @@
 ---
 import Layout from '../layouts/Layout.astro'
-import ProductCard from '../components/ProductCard.astro';
+import ProductCategory from '../components/ProductCardComponent.astro'
 ---
 
 <Layout>
     
-<!--tienda/blog con productos-->
-<main class="bg-red-900">
-        <div>
-            <ProductCard />
-        </div>
-              
+    <!--tienda con productos-->
+    <main class="bg-red-900">
+            <div>
+                <!--lista de productcard -->
+                <ProductCategory/>
+            </div>
+                
 
- 
-</main>
+    
+    </main>
 
 </Layout>

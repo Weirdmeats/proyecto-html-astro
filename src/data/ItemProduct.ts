@@ -1,0 +1,101 @@
+interface ItemProductInterface {
+    categoria: string,
+    marca: string,
+    modelo: string,
+    descripcion: string,
+    imagen: string,
+    precio: number,
+    slug:string
+
+}
+
+export const Producto: ItemProductInterface[] = [
+
+    //detalles de guitarras
+    {
+        slug: "fender-stratocaster",
+        categoria: "Guitarras",
+        marca: "Fender",
+        modelo: "Stratocaster",
+        descripcion: "Una de las mas conocidas guitarras electricas, marcada por su excelencia sonora, los mas reconocidos musicos como alx roses han ocupado versiones premium de esta guitarra",
+        imagen: "https://audiomusicacl.vtexassets.com/arquivos/ids/191413/1-guitarra-electrica-fender-american-vintage-ii-1957-stratocaster-2-color-sunburst-1113234.jpg",
+        precio: 699000
+    },
+    {
+        slug: "gibson-les-paul",
+        categoria: "Guitarras",
+        marca: "Gibson",
+        modelo: "Les Paul",
+        descripcion: "Una de las mas conocidas guitarras electricas, marcada por su excelencia sonora, los mas reconocidos musicos como alx roses han ocupado versiones premium de esta guitarra",
+        imagen: "https://audiomusicacl.vtexassets.com/arquivos/ids/186826/1-guitarra-electrica-gibson-les-paul-custom-ebony-gloss-1109687.jpg?v=638357381113930000",
+        precio: 699000
+    },
+    {
+        slug: "paul-rs-se-standard",
+        categoria: "Guitarras",
+        marca: "Paul",
+        modelo: "RS SE Standard",
+        descripcion: "Una de las mas conocidas guitarras electricas, marcada por su excelencia sonora, los mas reconocidos musicos como alx roses han ocupado versiones premium de esta guitarra",
+        imagen: "https://audiomusicacl.vtexassets.com/arquivos/ids/180304/1110741.jpg?v=638043127608870000",
+        precio: 699000
+    },
+    
+    //detalle de bajos
+    {
+        slug: "fender-mustang-bass",
+        categoria: "Bajos", 
+        marca:"Fender", 
+        modelo: "Mustang Bass",
+        descripcion: "",
+        imagen:"https://www.todobajos.com/19454-superlarge_default/fender-limited-edition-mustang-bass-shm.jpg",
+        precio: 699000
+    },
+    {
+        slug: "cort-A5p",
+        categoria: "Bajos", 
+        marca:"Cort", 
+        modelo: "A5p",
+        descripcion: "",
+        imagen:"https://es.euroguitar.com/images/products/cort/a5-plus-scms-optg-artisan-bartolini-pan-med-149062.jpg",
+        precio: 699000
+    },
+    {
+        slug: "warwick-thumb",
+        categoria: "Bajos",
+        marca:"Warwick",
+        modelo: "Thumb",
+        descripcion: "",
+        imagen:"https://r2.gear4music.com/media/43/439436/600/preview.jpg",
+        precio: 699000
+    },
+    //detalles de amplificadores
+    {
+        slug: "fender-twin-reverb",
+        categoria: "Amplificadores",
+        marca: "Fender", 
+        modelo: "Twin Reverb",
+        descripcion: "",
+        imagen:"https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/_32/323667/18902722_800.jpg",
+        precio: 699000
+    },
+    {
+        slug: "marshall-jcm800",
+        categoria: "Amplificadores",
+        marca: "Marshall", 
+        modelo: "JCM800", 
+        descripcion: "",
+        imagen:"https://bimotordj.com/image/cache/catalog/STUDIOCLASSICSC20H/1-1200x1200.jpg",
+        precio: 699000
+    },
+    {
+        slug: "vox-ac30",
+        categoria: "Amplificadores",
+        marca: "Vox", 
+        modelo: "AC30",
+        descripcion: "",
+        imagen:"https://http2.mlstatic.com/D_NQ_NP_829190-MLU70185876343_062023-O.webp",
+        precio: 699000
+    },
+    
+
+]

@@ -1,35 +1,22 @@
-interface dropItems {
+interface ItemDropMenuInterface {
     href: string,
-    categoria: string,
-    marca: string,
-    modelo: string
+    texto: string
 }
 
- export const ItemDropMenu: dropItems [] = [
-    //guitarras
+export const MenuDropCategory: ItemDropMenuInterface[] = [
     {
-        href: "/Blog/", 
-        categoria: "Guitarras", 
-        marca: "Fender",
-        modelo: "Stratocaster"
+        href: "/Blog", 
+        texto: "Guitarras"
+    },
+    {
+        href: "/Blog", 
+        texto: "Bajos"
+    }
+    ,
+    {
+        href: "/Blog", 
+        texto: "Amplificadores"
+    }
+    
 
-    },
-   
-    //bajos
-    {
-        href: "/Blog/", 
-        categoria: "Bajos", 
-        marca: "Fender",
-        modelo: "Mustang Bass"
-    },
-    
-    //amplificadores
-    {
-        href: "/blog/amplificadores", 
-        categoria: "Amplificadores", 
-        marca: "Fender",
-        modelo: "Twin Reverb"
-        
-    },
-    
 ]
