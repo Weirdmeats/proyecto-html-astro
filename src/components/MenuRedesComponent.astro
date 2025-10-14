@@ -1,0 +1,13 @@
+---
+import { ItemRedes } from "../data/ItemNavMenu";
+---
+
+<div  class="w-full p-1 m-1 px-1 gap-7 flex justify-items-center justify-center text-lg">
+    {ItemRedes.map((item)=>(
+        <div class="text-white font-bold flex flex-col items-center">
+                <span class="flex flex-col items-center">{item.texto}</span>
+                <a href={item.link}><img src={item.href} alt="" class="h-12 w-12"/></a>
+              
+        </div>
+    ))}
+</div>
