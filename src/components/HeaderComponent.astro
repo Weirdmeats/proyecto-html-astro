@@ -1,7 +1,6 @@
 ---
 import ItemNavMenu from "./MenuNavComponent.astro"
 import ItemDropMenu from "./MenuDropCategoryComponent.astro"
-
 ---
 
 <!--header -->
@@ -20,21 +19,14 @@ import ItemDropMenu from "./MenuDropCategoryComponent.astro"
             <h3 class="text-gray-300 text-lg sm:text-sm mt-1 mb-2 relative -top-1">Tienda de instrumentos musicales online!</h3>
         </div>
         <!--navbar y crear menu con const y moverlo con map.-->
-
         <!--nav del menu importado-->
         <ItemNavMenu />
     </div>
     <!--header inferior-->
     <div class="w-full bg-slate-400">
-        <div class="max-w-screen-lg mx-auto px-6 sm:px-10 md:px-20 flex flex-wrap items-center justify-center py-3 gap-3">
+        <div class="max-w-screen-lg bg-slate-400 w-auto space-x-2  mx-auto px-6 sm:px-10 md:px-20 flex flex-wrap items-center justify-center py-3 gap-3">
             <!--dropdowns-->
-            <div class="flex  bg-slate-400 w-auto space-x-2 ">
-                <!--dropdown guitarras -->
-                <div class="justify-center justify-items-center">
-                    <!--dropmenu importado -->
-                    <ItemDropMenu/>        
-                </div>
-            </div>
+            <ItemDropMenu/>   
         </div>
     </div>
 </header>

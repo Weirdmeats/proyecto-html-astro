@@ -41,3 +41,24 @@ export const ItemRedes: ItemNavMenuInterface[] = [
     }
 
 ]
+
+export const MenuDropCategory: ItemNavMenuInterface[] = [
+    {
+        href: "/Blog", 
+        texto: "Guitarras",
+        link:""
+    },
+    {
+        href: "/Blog", 
+        texto: "Bajos",
+        link:""
+    }
+    ,
+    {
+        href: "/Blog", 
+        texto: "Amplificadores",
+        link:""
+    }
+    
+
+]
