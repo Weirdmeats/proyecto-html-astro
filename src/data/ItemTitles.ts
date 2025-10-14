@@ -1,13 +1,9 @@
 interface itemTitlesInterface {
-    Primario: string,
-    Segundario: String,
-    Terciario: String
+    
 }
 
- export const TitlesPrimary: itemTitlesInterface[] = [
+ export const Titles: itemTitlesInterface[] = [
     {
-        Primario: "", 
-        Segundario:"", 
-        Terciario:"",
+       
     }
 ]
