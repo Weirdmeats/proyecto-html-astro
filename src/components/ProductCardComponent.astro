@@ -1,10 +1,10 @@
 ---
-import { Producto } from "../data/ItemProduct";
+import { Product } from "../data/ItemProduct";
 ---
 
 <section class="grid grid-cols-3 gap-x-5 gap-y-30 justify-items-center pt-20 pb-20">
 
-    {Producto.map((item)=>(
+    {Product.map((item)=>(
         <div>
             <div class="bg-white w-full max-w-xs rounded-lg shadow-md overflow-hidden flex flex-col justify-center text-center h-[450px]">
                     <h1 class="text-xl font-semibold text-gray-800 bg-gray-300 pt-2 pb-2">{item.categoria}</h1>

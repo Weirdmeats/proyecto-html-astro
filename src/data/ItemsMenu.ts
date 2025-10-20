@@ -4,6 +4,7 @@
     link: string
 }
 
+//menu del nav
 export const ItemNavMenu: ItemNavMenuInterface[] = [
     {
         href: "/", texto: "Inicio", 
@@ -22,7 +23,7 @@ export const ItemNavMenu: ItemNavMenuInterface[] = [
         link: ""
     },
 ]
-
+//menu redes sociales
 export const ItemRedes: ItemNavMenuInterface[] = [
     {
         href: "https://images.vexels.com/media/users/3/223136/isolated/preview/984f500cf9de4519b02b354346eb72e0-icono-de-facebook-redes-sociales.png", 
@@ -41,7 +42,7 @@ export const ItemRedes: ItemNavMenuInterface[] = [
     }
 
 ]
-
+//menu dropdown
 export const MenuDropCategory: ItemNavMenuInterface[] = [
     {
         href: "/Blog", 

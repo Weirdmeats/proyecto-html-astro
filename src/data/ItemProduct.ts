@@ -9,7 +9,7 @@
 
     }
 
-    export const Producto: ItemProductInterface[] = [
+    export const Product: ItemProductInterface[] = [
 
         //detalles de guitarras
         {

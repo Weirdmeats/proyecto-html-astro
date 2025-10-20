@@ -1,12 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro'
 import Producto from '../components/ProductCardComponent.astro'
+import TitlesComponent from '../components/TitlesComponent.astro'
 ---
 
 <Layout>
     
     <!--tienda con productos-->
     <main class="bg-red-900">
+        <TitlesComponent titulo='Bienvenidos' estilo='text-semibold text-6xl text-slate-700 text-center'/>
             <div>
                 <!--lista de productcard -->
                 <Producto/>
