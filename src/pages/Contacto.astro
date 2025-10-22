@@ -1,6 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro'
 import TitlesComponent from '../components/TitlesComponent.astro'
+import ItemRedes from '../components/MenuRedesComponent.astro'
+import ParrafoComponent from '../components/ParrafoComponent.astro'
 ---
 
 
@@ -8,9 +10,9 @@ import TitlesComponent from '../components/TitlesComponent.astro'
 
     <!--ARREGLAR TODO DESDE 0 PARA QUE QUEDE DRYCODE -->
 
-    <TitlesComponent titulo='Bienvenidos' estilo='text-semibold text-6xl text-slate-700 text-center'/>
+    <TitlesComponent titulo='Contacto' estilo='text-semibold text-6xl text-slate-700 text-center uppercase'/>
 <!--main contacto-->
-<main class="flex-grow bg-gradient-to-br from-gray-500 via-white to-red-300 mb-10 pb-20">
+<main class="flex-grow bg-gradient-to-br from-gray-500 via-white to-red-300 pb-20 pt-0">
 
   <!--contacto-->
   <div class="container mx-auto p-8 grid grid-cols-1 md:grid-cols-2 items-start gap-10">
@@ -42,22 +44,19 @@ import TitlesComponent from '../components/TitlesComponent.astro'
     </div>
 
     <!-- columna 2 -->
-    <div class="flex justify-center mt-10">
+    <div class="flex justify-center pt-10">
       <div class="bg-white p-5 text-start rounded-2xl w-full max-w-md py-3">
         <h1 class="text-2xl font-semibold text-gray-700 text-center">Contactos</h1>
 
         <div class="flex flex-col space-y-1">
           <h3 class="text-lg font-bold my-4">Redes sociales</h3>
-          <ul class="text-gray-800 text-md">
-            <li><a href="https://www.facebook.com/fender.es/?locale=es_LA">Facebook</a></li>
-            <li><a href="https://www.instagram.com/fender_chile/?hl=es">Instagram</a></li>
-            <li><a href="https://web.whatsapp.com/">Whatsapp +56973945235</a></li>
-          </ul>
+          <ItemRedes />
         </div>
 
         <div class="flex flex-col space-y-1">
           <h3 class="text-lg font-bold my-4">Política de envíos</h3>
-          <p class="text-gray-800 text-md">Solo realizamos envíos nacionales por el momento, ya que para realizar un envío internacional tendríamos que contar con una autorización de aduanas, la cual no poseemos.</p>
+          <ParrafoComponent parrafo='Solo realizamos envíos nacionales por el momento, ya que para realizar un envío internacional tendríamos que contar con una autorización de aduanas, la cual no poseemos.' estilo='text-gray-800 text-md'/>
+          
         </div>
       </div>
     </div>
