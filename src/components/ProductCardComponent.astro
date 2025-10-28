@@ -1,5 +1,6 @@
 ---
 import products from "../data/products.json"
+import TitlesComponent from "./TitlesComponent.astro"
 
 ---
 
@@ -9,18 +10,19 @@ import products from "../data/products.json"
     {products.map((product)=> (
         <div>
             <div class="bg-white w-full max-w-xs rounded-lg shadow-md overflow-hidden flex flex-col justify-center text-center h-[450px]">
-                    <h1 class="text-xl font-semibold text-gray-800 bg-gray-300 pt-2 pb-2">{product.categoria}</h1>
+                    <TitlesComponent titulo={product.categoria} estilo="text-xl font-semibold text-gray-800 bg-gray-300 pt-2 pb-2" tamaño="h1"/>
                 <div class="w-[300px] h-[300px] overflow-hidden">
                     <img src={product.imagen} alt={`Imagen de ${product.marca}`} class="w-full h-full object-cover"/>
                 </div>
 
                 <div class="p-2 flex flex-col gap-2">
-                    <h2 class="text-lg font-semibold text-gray-800  overflow-hidden text-ellipsis">{product.marca} {product.modelo}</h2>
+                    
+                    <TitlesComponent titulo={`${product.marca} ${product.modelo}`} estilo="text-lg font-semibold text-gray-800  overflow-hidden text-ellipsis" tamaño="h2"/>
                     <span class="text-lg font-bold text-gray-900">$ {product.precio} CLP</span>        
                 </div>
                     
                 <div class="p-2 pt-0 m-1">
-                    <a href={`/${product.slug}`}><button class="bg-red-400 hover:bg-red-500 text-white text-sm font-semibold px-5 py-1 rounded-lg shadow transition-colors duration-300 w-full block text-center" >Ver detalles</button></a>
+                    <a href={`/${product.slug}`}><button class="bg-red-400 hover:bg-red-500 text-white text-lg font-semibold px-5 py-1 rounded-lg shadow transition-colors duration-300 w-full block text-center" >Ver detalles</button></a>
                 </div>
             </div>   
         </div>

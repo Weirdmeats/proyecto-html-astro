@@ -2,12 +2,14 @@
 interface Props {
     titulo: string,
     estilo: string,
-
+    //variable tamaño con los titulos y subtitulos
+    tamaño?: "h1"| "h2"| "h3",
 }
 
-const { titulo, estilo} = Astro.props;
+const { tamaño= "h1", titulo, estilo} = Astro.props;
 
 ---
-
-
-<h1 class= {`text-4xl ${estilo}`}>{titulo}</h1>
+<!--separe los titulos por tamaño -->
+{tamaño === "h1" && <h1 class= {`text-4xl ${estilo}`}>{titulo}</h1>}
+{tamaño === "h2" && <h2 class= {`text-2xl ${estilo}`}>{titulo}</h2>}
+{tamaño === "h3" && <h3 class= {`text-xl ${estilo}`}>{titulo}</h3>}
