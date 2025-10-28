@@ -1,18 +1,20 @@
 ---
 import Layout from "../layouts/Layout.astro"
-import { ItemProduct } from "../data/ItemProduct";
+//import { ItemProduct } from "../data/ItemProduct";
+//cambiamos el itemproduct.ts del que sacabamos los datos por el .json
+import products from "../data/products.json"
 import ProductDetailComponent from "../components/ProductDetailComponent.astro";
 
 //mapeamos las rutas dinamicas del slug
 export async function getStaticPaths() {
-  return ItemProduct.map((item) => ({
+  return products.map((item) => ({
     params: { slug: item.slug },
   }));
 }
 
 const { slug } = Astro.params;
 //buscamos el mapeo  dentro del producto en ItemProduct.ts
-const producto = ItemProduct.find((item) => item.slug === slug);
+const producto = products.find((item) => item.slug === slug);
 ---
 
 <Layout>
