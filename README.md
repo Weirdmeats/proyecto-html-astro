@@ -1,12 +1,17 @@
 # Proyecto-html importado
 
 Astro+tailwind4/vite
-
+# Que contiene el proyecto?
 El proyecto contiene html, astro, javascript, css con tailwind 4
 
+# Como inicializar el proyecto
+Abrir un ide de su agrado, abrir la terminar y
 
+1./ Para instalar el proyecto:
+    npm install
 
-
+2./ Para hacer funcionar el proyecto:
+    npm run dev
 Estructura del Proyecto
 
 ```
@@ -14,21 +19,21 @@ PROYECTO-HTML-ASTRO/
 ├── public/
 ├── src/
 │   ├── assets/
-│   │   ├── astro.svg
-│   │   ├── background.svg
-│   │   ├── logo.png
+│   │   ├── favicon.ico
+│   │   ├── favicon.svg
 │   ├── components/
 │   │   ├── FooterComponent.astro
 │   │   ├── HeaderComponent.astro
 │   │   ├── MenuDropCategoryComponent.astro
 │   │   ├── MenuNavComponent.astro
+│   │   ├── MenuRedesComponent.astro
 │   │   ├── ProductCardComponent.astro
 │   │   ├── ProductDetailComponent.astro
-│   │   ├── TituloComponent.astro
+│   │   ├──
+│   │   ├── TitlesComponent.astro
 │   ├── data/
-│   │   ├── ItemDropMenu.ts
-│   │   ├── ItemNavMenu.ts
-│   │   ├── ItemProduct.ts
+│   │   ├── ItemsMenu.ts
+│   │   ├── products.json
 │   ├── layouts/
 │   │   ├── Layout.astro
 │   ├── pages/

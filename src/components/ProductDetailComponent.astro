@@ -1,7 +1,7 @@
 ---
 import ParrafoComponent from "./ParrafoComponent.astro";
 import TitlesComponent from "./TitlesComponent.astro";
-
+//ocupamos astroprops
 const { producto } = Astro.props;
 ---
 
@@ -17,13 +17,13 @@ const { producto } = Astro.props;
   <div class="flex flex-col justify-center gap-6">
 
 
-    <TitlesComponent titulo={`${producto.marca} ${producto.modelo}`} estilo="text-2xl sm:text-3xl font-semibold text-gray-900" tamaño="h2"/>
+    <TitlesComponent titulo={`${producto.marca} ${producto.modelo}`} estilo="text-2xl sm:text-3xl font-semibold text-gris-oscuro" tamaño="h2"/>
 
-      <ParrafoComponent parrafo={producto.descripcion} estilo="text-base sm:text-lg text-gray-700"/>
-        <div class="text-xl font-bold text-gray-800">$ {producto.precio} CLP</div>
+      <ParrafoComponent parrafo={producto.descripcion} estilo="text-base sm:text-lg text-gris-claro"/>
+        <div class="text-xl font-bold text-gris-oscuro">$ {producto.precio} CLP</div>
 
-        <input type="number" placeholder="Cantidad" class="w-full max-w-xs px-4 py-2 rounded-full border border-gray-300 text-gray-800"/>
+        <input type="number" placeholder="Cantidad" class="w-full max-w-xs px-4 py-2 rounded-full border border-gray-300 text-gris-oscuro"/>
 
-      <button class="bg-red-400 hover:bg-red-500 text-white font-semibold px-6 py-3 rounded-xl w-full max-w-xs">Agregar al carrito</button>
+      <button class="bg-rojo-oscuro hover:bg-red-400 text-blanco font-semibold px-6 py-3 rounded-xl w-full max-w-xs">Agregar al carrito</button>
   </div>
 </section>

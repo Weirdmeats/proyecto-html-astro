@@ -2,6 +2,7 @@
 @import "@fontsource-variable/roboto";
 @import "@fontsource-variable/open-sans";
 
+/*se cambio theme por layer porque daba error */
 @layer{
     body {
         font-family: "open-sans variable", "Roboto variable", sans-serif;
@@ -10,25 +11,24 @@
 }
 
 @layer utilities {
-    .bg-blanco       { background-color: #ffffff; }
-    .text-blanco     { color: #ffffff; }
-    .bg-azul-oscuro  { background-color: #002D3C; }
-    .text-azul-oscuro{ color: #002D3C; }
-    .bg-verde-neon   { background-color: #8EE000; }
-    .text-verde-neon { color: #8EE000; }
-    .bg-morado       { background-color: #6B2A8C; }
-    .text-morado     { color: #6B2A8C; }
-    .bg-body         { background-color: #3B3758; }
-    .text-body       { color: #3B3758; }
-    .bg-gris-claro   { background-color: #E0E0E0; }
-    .text-gris-claro { color: #E0E0E0; }
-    .bg-gris-oscuro  { background-color: #333333; }
-    .text-oscuro     { color: #333333; }
-    .bg-rojo         { background-color: #E53935; }
-    .text-rojo       { color: #E53935 }
-    .bg-amarillo     { background-color: #FFB300; }
-    .text-amarillo   { color: #FFB300; }
-    .bg-azul-opaco   { background-color: #1A4B5C; }
-    .text-azul-opaco { color: #1A4B5C; }
-}
+    .bg-blanco { background-color: white; } .text-blanco { color: white;}
+    .bg-negro { background-color: black; } .text-negro { color: black;}
 
+
+    .bg-azul-oscuro { background-color: #0f172b; } .text-azul-oscuro { color: #0f172b;}
+    .bg-azul-medio  { background-color: #1d293d; } .text-azul-medio { color: #1d293d;}
+    .bg-azul-claro  { background-color: #62748e; } .text-azul-claro { color: #62748e;}
+
+    .bg-morado-oscuro{ background-color: #3B3758;} .text-morado-oscuro{color: #3B3758;}
+
+    .bg-gris-oscuro{ background-color: #46494f;} .text-gris-oscuro{color: #46494f;}
+    .bg-gris-claro{ background-color: #9c9c9c;} .text-gris-claro{color: #9c9c9c;}
+    .bg-gris-masclaro{ background-color: #dad6d2;} .text-gris-masclaro{color: #dad6d2;}
+    
+    .bg-rojo-oscuro{ background-color: red;} .text-rojo-oscuro{color: red;}
+    .bg-rojo-claro{ background-color: #ff6467;} .text-rojo-claro{color: #ff6467;}
+
+
+
+
+}

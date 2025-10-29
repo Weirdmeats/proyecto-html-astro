@@ -1,19 +1,34 @@
 ---
 import Layout from "../layouts/Layout.astro"
-//import { ItemProduct } from "../data/ItemProduct";
+//import { ItemProduct } from "../data/ItemProduct"; ELIMINADO
 //cambiamos el itemproduct.ts del que sacabamos los datos por el .json
-import products from "../data/products.json"
 import ProductDetailComponent from "../components/ProductDetailComponent.astro";
-
-//mapeamos las rutas dinamicas del slug
+//import products from "../data/products.json" ELIMINADO
+//cambiamos el products.json local por un json web en jsonplaceholder
+const { slug } = Astro.params;
+interface ProductDataInterface{
+    slug: string,
+    categoria: string,
+    marca: string,
+    modelo: string,
+    descripcion: string,
+    imagen: string,
+    precio: number
+} 
+//mapee de forma asincronica el getstaticpaths para evitar errores
 export async function getStaticPaths() {
+  const response = await fetch("https://my-json-server.typicode.com/Weirdmeats/products-json/products");
+  const products: ProductDataInterface[] = await response.json();
+  
   return products.map((item) => ({
     params: { slug: item.slug },
   }));
 }
 
-const { slug } = Astro.params;
-//buscamos el mapeo  dentro del producto en ItemProduct.ts
+//buscamos el mapeo  dentro del producto en products.json
+const response = await fetch('https://my-json-server.typicode.com/Weirdmeats/products-json/products');
+const products: ProductDataInterface[]= await response.json();
+//cambiamos el mapeo del products.map por .find porque daba error
 const producto = products.find((item) => item.slug === slug);
 ---
 
@@ -22,3 +37,4 @@ const producto = products.find((item) => item.slug === slug);
     <ProductDetailComponent producto={producto} />
     
 </Layout>
+

@@ -1,3 +1,4 @@
+ 
  [
 
   {
@@ -28,6 +29,21 @@
     "precio": 699000
   },
   {
+    "slug": "yamaha-pacifica-112v",
+    "categoria": "Guitarras",
+    "marca": "Yamaha",
+    "modelo": "Pacifica 112v",
+    "descripcion": "Una de las mas conocidas guitarras electricas, marcada por su excelencia sonora, los mas reconocidos musicos como alx roses han ocupado versiones premium de esta guitarra",
+    "imagen": "https://cdnx.jumpseller.com/instruments/image/11150530/thumb/719/719?1648249180",
+    "precio": 699000
+  },
+  
+
+
+
+
+
+  {
     "slug": "fender-mustang-bass",
     "categoria": "Bajos",
     "marca": "Fender",
@@ -55,6 +71,22 @@
     "precio": 699000
   },
   {
+    "slug": "yamaha-trbx-304",
+    "categoria": "Bajos",
+    "marca": "Yamaha",
+    "modelo": "TRBX 304",
+    "descripcion": "Bajo Yamaha: Es un bajo de gran potencia",
+    "imagen": "https://cialfaro.com/cdn/shop/files/19_DM0020168.jpg?v=1716166735",
+    "precio": 699000
+  },
+  
+
+
+
+
+
+
+  {
     "slug": "fender-twin-reverb",
     "categoria": "Amplificadores",
     "marca": "Fender",
@@ -79,6 +111,15 @@
     "modelo": "AC30",
     "descripcion": "",
     "imagen": "https://http2.mlstatic.com/D_NQ_NP_829190-MLU70185876343_062023-O.webp",
+    "precio": 699000
+  },
+  {
+    "slug": "yamaha-ga15ii",
+    "categoria": "Amplificadores",
+    "marca": "Yamaha",
+    "modelo": "GA15ii",
+    "descripcion": "",
+    "imagen": "https://www.musicalesdoris.com/cdn/shop/products/cc360735baaf_1280x.jpg?v=1664062571",
     "precio": 699000
   }
 ]

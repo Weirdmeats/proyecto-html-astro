@@ -5,29 +5,28 @@ import TitlesComponent from "./TitlesComponent.astro"
 ---
 
 <!--header -->
-<header class="flex flex-col bg-slate-900 text-white ">
+<header class="flex flex-col bg-azul-oscuro text-blanco">
     <!--header principal-->
-    <div class="w-full max-w-screen-xl px-4 mx-auto flex flex-col md:flex-row justify-between items-center py-6">
+    <div class="w-full max-w-screen-xl px-4 mx-auto flex flex-col md:flex-row justify-between items-center py-5">
         <div class="flex items-center gap-3 flex-wrap">
             <!--logo-->
-            <a href="/">    
-                <img src="https://cdn-icons-png.flaticon.com/512/820/820644.png" alt="logo" class="h-[70px] w-[70px] sm:h-20 sm:w-20 lg:h-[90]">
+            <a href="/">
+                <!--ver posibilidad de drycode pra images-->    
+                <img src="https://cdn-icons-png.flaticon.com/512/820/820644.png" alt="logo tiendaonline" class="h-[70px] w-[70px] sm:h-20 sm:w-20 lg:h-[90]">
             </a>
             <!--marca-->
-            <TitlesComponent titulo="T&G Music©" estilo="text-2xl sm:text-3xl lg:text-3 text-white font-bold hover:bg-red-400 rounded-sm px-3 py-2" tamaño="h1"/>
+            <TitlesComponent titulo="T&G Music©" estilo="text-2xl sm:text-3xl lg:text-3 text-white font-bold hover:bg-red-400 rounded-2xl px-3 py-2" tamaño="h1"/>
             <!--mensaje-->
-            <TitlesComponent titulo="Tienda de instrumentos musicales online!" estilo="text-gray-300 text-lg sm:text-sm mt-1 mb-2 relative -top-1" tamaño="h3" />
+            <TitlesComponent titulo="Tienda de instrumentos musicales online!" estilo="text-blanco text-lg sm:text-sm mt-1 mb-2 relative -top-1" tamaño="h3" />
         </div>
         <!--nav del menu importado-->
         <ItemNavMenu />
     </div>
     <!--header inferior-->
-    <div class="w-full bg-slate-800">
-        <div class="max-w-screen-lg w-auto space-x-2  mx-auto px-6 sm:px-10 md:px-20 flex flex-wrap items-center justify-center py-3 gap-3">
+    <div class="w-full bg-azul-medio">
+        <div class="max-w-screen-lg w-auto space-x-2  mx-auto px-6 sm:px-10 md:px-20 flex flex-wrap items-center justify-center py-2 gap-3">
             <!--dropdowns-->
             <ItemDropMenu/>   
         </div>
     </div>
 </header>
-
-    
