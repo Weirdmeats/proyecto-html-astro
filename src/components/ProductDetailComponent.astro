@@ -9,7 +9,7 @@ const { producto } = Astro.props;
 
   <div class="flex justify-center items-center">
       <div class="w-full max-w-md h-[300px] sm:h-[360px] md:h-[400px] overflow-hidden rounded-xl shadow-md">
-
+        
         <img src={producto.imagen} alt={`Imagen de ${producto.modelo}`} class="w-full h-full object-cover"/>
     </div>
   </div>
@@ -24,6 +24,6 @@ const { producto } = Astro.props;
 
         <input type="number" placeholder="Cantidad" class="w-full max-w-xs px-4 py-2 rounded-full border border-gray-300 text-gris-oscuro"/>
 
-      <button class="bg-rojo-oscuro hover:bg-red-400 text-blanco font-semibold px-6 py-3 rounded-xl w-full max-w-xs">Agregar al carrito</button>
+      <button class="bg-gris-oscuro hover:bg-slate-500 text-blanco font-semibold px-6 py-3 rounded-xl w-full max-w-xs">Agregar al carrito</button>
   </div>
 </section>

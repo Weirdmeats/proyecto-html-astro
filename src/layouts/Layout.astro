@@ -21,6 +21,15 @@ import FooterComponent from "../components/FooterComponent.astro"
 			<slot />
 
 		</main>
+		<!--cambie de lugar el keyframe slider del index al layout para que este presente en todas las  paginas -->
+		<style>
+            @keyframes slide {
+                0%, 20% { transform: translateX(0%); }
+                33%, 53% { transform: translateX(-33.3333%); }
+                66%, 86% { transform: translateX(-66.6666%); }
+                100% { transform: translateX(0%); }
+            }
+        </style>
 		<!--se agrego el FooterComponent dentro del footer-->
 		<footer><FooterComponent/></footer>
 

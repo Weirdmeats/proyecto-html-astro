@@ -1,11 +1,14 @@
-# Proyecto-html importado
+# PROYECTO-HTML IMPORTADO
 
-Astro+tailwind4/vite
+ASTRO+TAILWIND4/VITE
 # Que contiene el proyecto?
 El proyecto contiene html, astro, javascript, css con tailwind 4
 
+# SIMULAMOS UNA API CON JSONPLACEHOLDER MEDIANTE EL SIGUENTE LINK
+"https://my-json-server.typicode.com/Weirdmeats/products-json/products"
+
 # Como inicializar el proyecto
-Abrir un ide de su agrado, abrir la terminar y
+Abrir un ide de su agrado, abrir la terminar y escribir los siguentes pasos:
 
 1./ Para instalar el proyecto:
     npm install
@@ -29,11 +32,11 @@ PROYECTO-HTML-ASTRO/
 │   │   ├── MenuRedesComponent.astro
 │   │   ├── ProductCardComponent.astro
 │   │   ├── ProductDetailComponent.astro
-│   │   ├──
+│   │   ├── ParrafoComponent.astro
 │   │   ├── TitlesComponent.astro
 │   ├── data/
 │   │   ├── ItemsMenu.ts
-│   │   ├── products.json
+│   │   ├── #products.json #NO OCUPADO, SOLO ESTA DE REFERENCIA, SIMULAMOS UNA API CON JSONPLACEHOLDER
 │   ├── layouts/
 │   │   ├── Layout.astro
 │   ├── pages/

@@ -1,7 +1,8 @@
     interface ItemNavMenuInterface {
     href: string,
     texto: string,
-    link: string
+    link: string,
+    //intentando colocar "categoria?" para poder acceder a las categorias
 }
 
 //menu del nav
@@ -47,18 +48,21 @@ export const MenuDropCategory: ItemNavMenuInterface[] = [
     {
         href: "/Blog?categoria=Guitarras", 
         texto: "Guitarras",
-        link:""
+        link:"",
+     
     },
     {
         href: "/Blog?categoria=Bajos", 
         texto: "Bajos",
-        link:""
+        link:"",
+  
     }
     ,
     {
         href: "/Blog?categoria=Amplificadores", 
         texto: "Amplificadores",
-        link:""
+        link:"",
+      
     }
     
 
