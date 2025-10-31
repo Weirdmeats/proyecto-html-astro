@@ -11,11 +11,11 @@ interface ProductsInterface{
     precio: number
 }
 //vamos a obtener los datos desde mi json en jsonplacerholder de forma senior para catchear errores
-//codigo asinctronico extraido del grupo taller de programacion
+//codigo senior asinctronico para obtener data extraido del grupo taller de programacion
 const data = async()=>{
     try {
         //obteniendo datos con el fetch
-        const response =await fetch('https://my-json-server.typicode.com/Weirdmeats/products-json/products');//json products del jsonplaceholder
+        const response =await fetch('https://my-json-server.typicode.com/Weirdmeats/products-json/products');//json products propio del jsonplaceholder
         const products =await response.json();
         return products;
     } catch(error){
@@ -28,8 +28,8 @@ const data = async()=>{
 const products: ProductsInterface[] = await data();
 ---
 
-
-<section class="grid grid-cols-4 gap-x-5 gap-y-30 justify-items-center pt-20 pb-20">
+<!--aplicamos  titlescomponent para hacer el codigo mas dry -->
+<section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-5 gap-y-30 justify-items-center pt-20 pb-20">
     <!--mapeo de los productos -->
     {products.map((product)=> (
         <div>

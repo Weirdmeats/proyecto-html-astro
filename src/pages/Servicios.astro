@@ -5,14 +5,13 @@ import ParrafoComponent from "../components/ParrafoComponent.astro"
 ---
 
 <Layout>
-    <!--arreglar todo -->
-<!--main servicios-->
-<main class="flex-grow bg-gradient-to-br from-gray-500 via-white to-red-300 pt-20 pb-20">
-    <TitlesComponent titulo='servicios' estilo='text-semibold text-6xl text-azul-oscuro text-center uppercase'/>
+    
+<!--main servicios, aplicamos  titlescomponent para hacer el codigo mas dry -->
+<main class="flex-grow justify-center justify-items-center items-center text-center bg-gradient-to-br from-gray-500 via-white to-red-300 pt-20 pb-20">
+    <TitlesComponent titulo='servicios' estilo='text-semibold text-6xl text-azul-oscuro text-center font-bold uppercase'/>
     <div class="w-full text-center pt-[60px] pb-10">
         <!--se cambio mt- de 16 a [60px] porque no funcionaba-->
             <TitlesComponent titulo='¿Quiénes somos nosotros?' estilo='text-4xl sm:text-5xl md:text-6xl font-semibold text-azul-claro' tamaño="h2"/>
-            <TitlesComponent titulo='Instrumentos que inspiran' estilo='text-xl sm:text-5xl md:text-2xl font-semibold text-azul-claro' tamaño="h2"/>
     </div>
     <section class="w-full py-14 px-6 text-gris-oscuro">
         
@@ -21,30 +20,34 @@ import ParrafoComponent from "../components/ParrafoComponent.astro"
             <div class="text-center">
                 <TitlesComponent titulo='¿Quiénes somos nosotros?' estilo='text-2xl sm:text-3xl font-extrabold' tamaño="h2"/>
             <ParrafoComponent parrafo="Somos una tienda de instrumentos musicales en crecimiento" estilo="text-base sm:text-lg text-gray-700 mt-3"/>
+            <img src="https://store.cyvmusic.cl/wp-content/uploads/2024/03/585x503-tienda-banner-1.jpg" alt="tienda1" class="mx-auto w-100 h-100 overflow-hidden rounded-full">
             </div>
             <div class="text-center">
                 <TitlesComponent titulo='¿De dónde venimos?' estilo='text-3xl sm:text-3xl font-extrabold' tamaño="h2"/>
             <ParrafoComponent parrafo="Comenzamos en una tienda diminuta ubicada en Piloto Pardo 123, Castro" estilo="text-base sm:text-lg text-gray-700 mt-3"/>
+            <img src="https://elinsular.cl/wp-content/uploads/2024/11/CASA-OKUPA-CASTRO.png" alt="tienda2" class="mx-auto w-100 h-100 overflow-hidden rounded-full">
             </div>
         </div>
         <div class="space-y-7 text-gris-oscuro">
             <div class="text-center">
-                <TitlesComponent titulo='Tienda de instrumentos' estilo='text-3xl sm:text-3xl font-extrabold' tamaño="h2"/>
+                <TitlesComponent titulo='¿Tienda de instrumentos? ¿Online?' estilo='text-3xl sm:text-3xl font-extrabold' tamaño="h2"/>
             <ParrafoComponent parrafo="Asi es, estamos en crecimiento, lamentablemente no poseemos un catalogo extendido de instrumentos musicales, pero, solamente es el inicio de este tan largo viaje de emprendimientos" estilo="text-base sm:text-lg text-gray-700 mt-3"/>
+            <img src="https://i.redd.it/cjdvuof4pdz91.jpg" alt="tienda3" class="mx-auto w-100 h-100 overflow-hidden rounded-full">
+        </div>
+        <div class="space-y-7 gap-10">
+            <div class="text-center gap-10">
+                <TitlesComponent titulo='¿Hacia dónde vamos?' estilo='text-2xl sm:text-3xl font-extrabold' tamaño="h2"/>
+             <ParrafoComponent parrafo="A seguir creciendo, en un futuro algo lejano pensamos en abrir nuevamente una tienda fisica" estilo="text-base sm:text-lg text-gray-700 mt-3"/>
+            <img src="https://i.redd.it/cjdvuof4pdz91.jpg" alt="tienda4" class="mx-auto w-100 h-100 overflow-hidden rounded-full">
+            </div>
+            <div class="text-center ">
+                <TitlesComponent titulo='¿Estamos solos?' estilo='text-2xl sm:text-3xl font-extrabold' tamaño="h2"/>
+            <ParrafoComponent parrafo="No, estamos acompañados de proveedores de instrumentos musicales de la zona y proximamente tendremos convenios internacionales para importar desde EEUU." estilo="text-base sm:text-lg text-gray-700 mt-3"/>
+            <img src="https://i.redd.it/cjdvuof4pdz91.jpg" alt="tienda5" class="mx-auto w-100 h-100 overflow-hidden rounded-full">
         </div>
         
         </div>
 
-        <!--derecha-->
-        <div class="space-y-7">
-            <div class="text-center">
-                <TitlesComponent titulo='¿Hacia dónde vamos?' estilo='text-2xl sm:text-3xl font-extrabold' tamaño="h2"/>
-             <ParrafoComponent parrafo="A seguir creciendo, en un futuro algo lejano pensamos en abrir nuevamente una tienda fisica" estilo="text-base sm:text-lg text-gray-700 mt-3"/>
-            </div>
-            <div class="text-center">
-                <TitlesComponent titulo='Estamos solos?' estilo='text-2xl sm:text-3xl font-extrabold' tamaño="h2"/>
-            <ParrafoComponent parrafo="No, estamos acompañados de proveedores de instrumentos musicales de la zona y proximamente tendremos convenios internacionales para importar desde EEUU." estilo="text-base sm:text-lg text-gray-700 mt-3"/>
-            </div>
     </section>  
 </main>
 </Layout>

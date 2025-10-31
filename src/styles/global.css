@@ -1,15 +1,17 @@
 @import "tailwindcss";
+/*fuentes recomendadas por el profesor */
 @import "@fontsource-variable/roboto";
 @import "@fontsource-variable/open-sans";
 
-/*se cambio theme por layer porque daba error */
+/*aprendido en clase.
+se cambio theme por layer porque daba error */
 @layer{
     body {
         font-family: "open-sans variable", "Roboto variable", sans-serif;
     }
 
 }
-
+/*colores personalizados ocupados en toda la pagina */
 @layer utilities {
     .bg-blanco { background-color: white; } .text-blanco { color: white;}
     .bg-negro { background-color: black; } .text-negro { color: black;}
