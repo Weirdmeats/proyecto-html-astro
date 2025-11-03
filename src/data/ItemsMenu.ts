@@ -2,9 +2,7 @@
     href: string,
     texto: string,
     link: string,
-    //intentando colocar "categoria?" para poder acceder a las categorias
 }
-
 //menu del nav
 export const ItemNavMenu: ItemNavMenuInterface[] = [
     {
@@ -16,7 +14,7 @@ export const ItemNavMenu: ItemNavMenuInterface[] = [
         link: ""
     },
     {
-        href: "/Blog", texto: "Blog", 
+        href: "/Blog", texto: "Tienda", 
         link: ""
     },
     {
@@ -41,29 +39,4 @@ export const ItemRedes: ItemNavMenuInterface[] = [
         texto: "Whatsapp", 
         link: "https://web.whatsapp.com/"
     }
-
-]
-//menu categorias, vamos a rehacerlo
-export const MenuDropCategory: ItemNavMenuInterface[] = [
-    {
-        href: "/Blog?categoria=Guitarras", 
-        texto: "Guitarras",
-        link:"",
-     
-    },
-    {
-        href: "/Blog?categoria=Bajos", 
-        texto: "Bajos",
-        link:"",
-  
-    }
-    ,
-    {
-        href: "/Blog?categoria=Amplificadores", 
-        texto: "Amplificadores",
-        link:"",
-      
-    }
-    
-
 ]

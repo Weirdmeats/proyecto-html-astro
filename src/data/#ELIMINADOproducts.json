@@ -2,8 +2,17 @@
  [
 
   {
-    "#### ARCHIVO SIN OCUPAR, OCUPAMOS EL JSONPLACEHOLDER PARA OBTENER LOS DATOS ONLINE###": "https://my-json-server.typicode.com/Weirdmeats/products-json/products",
     
+    "ESTE ARCHIVO SOLO ESTA AQUI PARA QUE PUEDA VER LOS DATOS DE FORMA MAS DIRECTA":"ESTE ARCHIVO SOLO ESTA AQUI PARA QUE PUEDA VER LOS DATOS DE FORMA MAS DIRECTA",
+    "#### ARCHIVO SIN OCUPAR, OCUPAMOS EL JSONPLACEHOLDER PARA OBTENER LOS DATOS ONLINE###": "https://my-json-server.typicode.com/Weirdmeats/products-json/products"
+    
+  },
+
+
+
+
+  
+  {
     "slug": "fender-stratocaster",
     "categoria": "Guitarras",
     "marca": "Fender",

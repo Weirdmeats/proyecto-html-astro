@@ -1,5 +1,8 @@
 ---
 import TitlesComponent from "./TitlesComponent.astro"
+
+
+
 //creamos la interfaz de products
 interface ProductsInterface{
     slug: string,
@@ -9,7 +12,11 @@ interface ProductsInterface{
     descripcion: string,
     imagen: string,
     precio: number
+
+
 }
+
+
 //vamos a obtener los datos desde mi json en jsonplacerholder de forma senior para catchear errores
 //codigo senior asinctronico para obtener data extraido del grupo taller de programacion
 const data = async()=>{
@@ -30,28 +37,28 @@ const products: ProductsInterface[] = await data();
 
 <!--aplicamos  titlescomponent para hacer el codigo mas dry -->
 <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-5 gap-y-30 justify-items-center pt-20 pb-20">
-    <!--mapeo de los productos -->
-    {products.map((product)=> (
-        <div>
-            <div class="bg-blanco w-full max-w-xs rounded-lg shadow-md overflow-hidden flex flex-col justify-center text-center h-[450px]">
-                    <TitlesComponent titulo={product.categoria} estilo="text-xl font-semibold text-gris-oscuro bg-gray-300 pt-2 pb-2" tamaño="h1"/>
-                <div class="w-[300px] h-[300px] overflow-hidden">
-                    <img src={product.imagen} alt={`Imagen de ${product.marca}`} class="w-full h-full object-cover"/>
-                </div>
-
-                <div class="p-2 flex flex-col gap-2">
-                 
-                    <TitlesComponent titulo={`${product.marca} ${product.modelo}`} estilo="text-lg font-semibold text-gris-oscuro overflow-hidden text-ellipsis" tamaño="h2"/>
-                    <span class="text-lg font-bold text-gris-oscuro">$ {product.precio} CLP</span>        
-                </div>
-                    
-                <div class="p-2 pt-0 m-1">
-                    <a href={`/${product.slug}`}><button class="bg-gris-oscuro hover:bg-slate-500 text-blanco text-lg font-semibold px-5 py-1 rounded-lg shadow transition-colors duration-300 w-full block text-center" >Ver detalles</button></a>
-                </div>
-            </div>   
+  <!--mapeo de productos -->
+  {products.map(product => (
+    <div>
+      <div class="bg-blanco w-full max-w-xs rounded-lg shadow-md overflow-hidden flex flex-col justify-center text-center h-[450px]">
+        <TitlesComponent titulo={product.categoria} estilo="text-xl font-semibold text-gris-oscuro bg-gray-300 pt-2 pb-2" tamaño="h1"/>
+        <div class="w-[300px] h-[300px] overflow-hidden">
+          <img src={product.imagen} alt={`Imagen de ${product.marca}`} class="w-full h-full object-cover"/>
         </div>
-
-    ))} 
+        <div class="p-2 flex flex-col gap-2">
+          <TitlesComponent titulo={`${product.marca} ${product.modelo}`} estilo="text-lg font-semibold text-gris-oscuro overflow-hidden text-ellipsis" tamaño="h2"/>
+          <span class="text-lg font-bold text-gris-oscuro">$ {product.precio} CLP</span>        
+        </div>
+        <div class="p-2 pt-0 m-1">
+          <a href={`/${product.slug}`}>
+            <button class="bg-gris-oscuro hover:bg-slate-500 text-blanco text-lg font-semibold px-5 py-1 rounded-lg shadow transition-colors duration-300 w-full block text-center">
+              Ver detalles
+            </button>
+          </a>
+        </div>
+      </div>   
+    </div>
+  ))}
 </section>
 
         

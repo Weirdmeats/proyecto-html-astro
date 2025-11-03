@@ -5,13 +5,12 @@ import ParrafoComponent from "../components/ParrafoComponent.astro"
 ---
 
 <Layout>
-    
+
 <!--main servicios, aplicamos  titlescomponent para hacer el codigo mas dry -->
 <main class="flex-grow justify-center justify-items-center items-center text-center bg-gradient-to-br from-gray-500 via-white to-red-300 pt-20 pb-20">
-    <TitlesComponent titulo='servicios' estilo='text-semibold text-6xl text-azul-oscuro text-center font-bold uppercase'/>
+    <TitlesComponent titulo='servicios' estilo='font-semibold text-6xl text-azul-oscuro text-center font-bold uppercase'/>
     <div class="w-full text-center pt-[60px] pb-10">
         <!--se cambio mt- de 16 a [60px] porque no funcionaba-->
-            <TitlesComponent titulo='¿Quiénes somos nosotros?' estilo='text-4xl sm:text-5xl md:text-6xl font-semibold text-azul-claro' tamaño="h2"/>
     </div>
     <section class="w-full py-14 px-6 text-gris-oscuro">
         
@@ -41,7 +40,7 @@ import ParrafoComponent from "../components/ParrafoComponent.astro"
             <img src="https://i.redd.it/cjdvuof4pdz91.jpg" alt="tienda4" class="mx-auto w-100 h-100 overflow-hidden rounded-full">
             </div>
             <div class="text-center ">
-                <TitlesComponent titulo='¿Estamos solos?' estilo='text-2xl sm:text-3xl font-extrabold' tamaño="h2"/>
+                <TitlesComponent titulo='¿Estamos solos o acompañados?' estilo='text-2xl sm:text-3xl font-extrabold' tamaño="h2"/>
             <ParrafoComponent parrafo="No, estamos acompañados de proveedores de instrumentos musicales de la zona y proximamente tendremos convenios internacionales para importar desde EEUU." estilo="text-base sm:text-lg text-gray-700 mt-3"/>
             <img src="https://i.redd.it/cjdvuof4pdz91.jpg" alt="tienda5" class="mx-auto w-100 h-100 overflow-hidden rounded-full">
         </div>

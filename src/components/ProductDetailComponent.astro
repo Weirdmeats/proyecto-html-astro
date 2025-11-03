@@ -5,7 +5,7 @@ import TitlesComponent from "./TitlesComponent.astro";
 const { producto } = Astro.props;
 ---
 <!--aplicamos  titlescomponent para hacer el codigo mas dry -->
-<section class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-6 py-10">
+<section class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-6 py-10 bg-gris-masclaro">
 
   <div class="flex justify-center items-center">
       <div class="w-full max-w-md h-[300px] sm:h-[360px] md:h-[400px] overflow-hidden rounded-xl shadow-md">
@@ -19,7 +19,7 @@ const { producto } = Astro.props;
 
     <TitlesComponent titulo={`${producto.marca} ${producto.modelo}`} estilo="text-2xl sm:text-3xl font-semibold text-gris-oscuro" tamaño="h2"/>
 
-      <ParrafoComponent parrafo={producto.descripcion} estilo="text-base sm:text-lg text-gris-claro"/>
+      <ParrafoComponent parrafo={producto.descripcion} estilo="text-base sm:text-lg text-gris-oscuro"/>
         <div class="text-xl font-bold text-gris-oscuro">$ {producto.precio} CLP</div>
 
         <input type="number" placeholder="Cantidad" class="w-full max-w-xs px-4 py-2 rounded-full border border-gray-300 text-gris-oscuro"/>

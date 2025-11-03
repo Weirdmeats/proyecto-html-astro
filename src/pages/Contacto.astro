@@ -4,14 +4,14 @@ import TitlesComponent from '../components/TitlesComponent.astro'
 import ItemRedes from '../components/MenuRedesComponent.astro'
 import ParrafoComponent from '../components/ParrafoComponent.astro'
 ---
-<!--ARREGLAR TODO DESDE 0 PARA QUE QUEDE DRYCODE -->
+<!--ARREGLAR TODOS LOS TTULOS PARA QUE QUEDE DRYCODE -->
 
 <Layout>
 
-<!--main contacto, aplicamos  titlescomponent para hacer el codigo mas dry-->
+<!--main contacto, aplicamos  titlescomponent para hacer el codigo mas dry -->
 <main class="flex-grow bg-gradient-to-br from-gray-500 via-blue-400 to-blue-900 pb-20 pt-20">
-  <TitlesComponent titulo='Contacto' estilo='text-semibold text-6xl text-azul-oscuro text-center uppercase font-bold' tamaño='h1'/>
-  <!--contacto-->
+  <TitlesComponent titulo='Contacto' estilo='font-semibold text-6xl text-azul-oscuro text-center uppercase font-bold' tamaño='h1'/>
+  <!--contacto -->
   <div class="container mx-auto p-8 grid grid-cols-1 md:grid-cols-2 items-start gap-10">
     <!--columna 1-->
     <div class="flex justify-center mt-10">
@@ -21,6 +21,8 @@ import ParrafoComponent from '../components/ParrafoComponent.astro'
         
           <div class="flex flex-col space-y-2">
             <TitlesComponent titulo='Nombre' estilo='text-xl text-gray-700' tamaño='h3'/>
+
+
             <input type="text" placeholder="Ingresa tu nombre" class="rounded-lg w-full h-10 text-base text-gris-oscuro p-4">
           </div>
 
@@ -31,6 +33,7 @@ import ParrafoComponent from '../components/ParrafoComponent.astro'
 
           <div class="flex flex-col space-y-2">
             <TitlesComponent titulo='Mensaje' estilo='text-xl text-gray-700' tamaño='h3'/>
+        
             <textarea class="rounded-lg p-4" name="mensaje" id="mensaje" placeholder="Ingresa tu mensaje"></textarea>
           </div>
 
@@ -43,7 +46,7 @@ import ParrafoComponent from '../components/ParrafoComponent.astro'
     <!--columna 2 -->
     <div class="flex justify-center pt-10">
       <div class="bg-blanco p-5 text-start rounded-2xl w-full max-w-md py-3">
-        <TitlesComponent titulo='Contactos' estilo='text-2xl font-semibold text-gris-oscuro text-center' tamaño='h2'/>
+        <TitlesComponent titulo='Contactos' estilo='text-2xl font-semibold text-negro text-center' tamaño='h2'/>
         <div class="flex flex-col space-y-1">
           <TitlesComponent titulo='Redes sociales' estilo='text-lg font-bold my-4' tamaño='h3'/>
           <ItemRedes />
@@ -51,7 +54,7 @@ import ParrafoComponent from '../components/ParrafoComponent.astro'
 
         <div class="flex flex-col space-y-1">
           <TitlesComponent titulo='Política de envíos' estilo='text-lg font-bold my-4' tamaño='h3'/>
-          <ParrafoComponent parrafo='Solo realizamos envíos nacionales por el momento, ya que para realizar un envío internacional tendríamos que contar con una autorización de aduanas, la cual no poseemos.' estilo='text-gray-800 text-md'/>
+          <ParrafoComponent parrafo='Solo realizamos envíos nacionales por el momento, ya que para realizar un envío internacional tendríamos que contar con una autorización de aduanas, la cual no poseemos.' estilo=' text-lg text-gray-800 text-md'/>
           
         </div>
       </div>
