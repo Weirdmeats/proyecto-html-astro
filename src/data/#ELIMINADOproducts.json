@@ -1,136 +1,184 @@
- 
- [
-
-  {
-    
-    "ESTE ARCHIVO SOLO ESTA AQUI PARA QUE PUEDA VER LOS DATOS DE FORMA MAS DIRECTA":"ESTE ARCHIVO SOLO ESTA AQUI PARA QUE PUEDA VER LOS DATOS DE FORMA MAS DIRECTA",
-    "#### ARCHIVO SIN OCUPAR, OCUPAMOS EL JSONPLACEHOLDER PARA OBTENER LOS DATOS ONLINE###": "https://my-json-server.typicode.com/Weirdmeats/products-json/products"
-    
-  },
-
-
-
-
-  
-  {
-    "slug": "fender-stratocaster",
-    "categoria": "Guitarras",
-    "marca": "Fender",
-    "modelo": "Stratocaster",
-    "descripcion": "Una de las mas conocidas guitarras electricas, marcada por su excelencia sonora, los mas reconocidos musicos como alx roses han ocupado versiones premium de esta guitarra",
-    "imagen": "https://audiomusicacl.vtexassets.com/arquivos/ids/191413/1-guitarra-electrica-fender-american-vintage-ii-1957-stratocaster-2-color-sunburst-1113234.jpg",
-    "precio": 699000
-  },
-  {
-    "slug": "gibson-les-paul",
-    "categoria": "Guitarras",
-    "marca": "Gibson",
-    "modelo": "Les Paul",
-    "descripcion": "Una de las mas conocidas guitarras electricas, marcada por su excelencia sonora, los mas reconocidos musicos como alx roses han ocupado versiones premium de esta guitarra",
-    "imagen": "https://audiomusicacl.vtexassets.com/arquivos/ids/186826/1-guitarra-electrica-gibson-les-paul-custom-ebony-gloss-1109687.jpg?v=638357381113930000",
-    "precio": 699000
-  },
-  {
-    "slug": "paul-rs-se-standard",
-    "categoria": "Guitarras",
-    "marca": "Paul",
-    "modelo": "RS SE Standard",
-    "descripcion": "Una de las mas conocidas guitarras electricas, marcada por su excelencia sonora, los mas reconocidos musicos como alx roses han ocupado versiones premium de esta guitarra",
-    "imagen": "https://audiomusicacl.vtexassets.com/arquivos/ids/180304/1110741.jpg?v=638043127608870000",
-    "precio": 699000
-  },
-  {
-    "slug": "yamaha-pacifica-112v",
-    "categoria": "Guitarras",
-    "marca": "Yamaha",
-    "modelo": "Pacifica 112v",
-    "descripcion": "Una de las mas conocidas guitarras electricas, marcada por su excelencia sonora, los mas reconocidos musicos como alx roses han ocupado versiones premium de esta guitarra",
-    "imagen": "https://cdnx.jumpseller.com/instruments/image/11150530/thumb/719/719?1648249180",
-    "precio": 699000
-  },
-  
-
-
-
-
-
-  {
-    "slug": "fender-mustang-bass",
-    "categoria": "Bajos",
-    "marca": "Fender",
-    "modelo": "Mustang Bass",
-    "descripcion": "",
-    "imagen": "https://www.todobajos.com/19454-superlarge_default/fender-limited-edition-mustang-bass-shm.jpg",
-    "precio": 699000
-  },
-  {
-    "slug": "cort-A5p",
-    "categoria": "Bajos",
-    "marca": "Cort",
-    "modelo": "A5p",
-    "descripcion": "",
-    "imagen": "https://es.euroguitar.com/images/products/cort/a5-plus-scms-optg-artisan-bartolini-pan-med-149062.jpg",
-    "precio": 699000
-  },
-  {
-    "slug": "warwick-thumb",
-    "categoria": "Bajos",
-    "marca": "Warwick",
-    "modelo": "Thumb",
-    "descripcion": "",
-    "imagen": "https://r2.gear4music.com/media/43/439436/600/preview.jpg",
-    "precio": 699000
-  },
-  {
-    "slug": "yamaha-trbx-304",
-    "categoria": "Bajos",
-    "marca": "Yamaha",
-    "modelo": "TRBX 304",
-    "descripcion": "Bajo Yamaha: Es un bajo de gran potencia",
-    "imagen": "https://cialfaro.com/cdn/shop/files/19_DM0020168.jpg?v=1716166735",
-    "precio": 699000
-  },
-  
-
-
-
-
-
-
-  {
-    "slug": "fender-twin-reverb",
-    "categoria": "Amplificadores",
-    "marca": "Fender",
-    "modelo": "Twin Reverb",
-    "descripcion": "",
-    "imagen": "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/_32/323667/18902722_800.jpg",
-    "precio": 699000
-  },
-  {
-    "slug": "marshall-jcm800",
-    "categoria": "Amplificadores",
-    "marca": "Marshall",
-    "modelo": "JCM800",
-    "descripcion": "",
-    "imagen": "https://bimotordj.com/image/cache/catalog/STUDIOCLASSICSC20H/1-1200x1200.jpg",
-    "precio": 699000
-  },
-  {
-    "slug": "vox-ac30",
-    "categoria": "Amplificadores",
-    "marca": "Vox",
-    "modelo": "AC30",
-    "descripcion": "",
-    "imagen": "https://http2.mlstatic.com/D_NQ_NP_829190-MLU70185876343_062023-O.webp",
-    "precio": 699000
-  },
-  {
-    "slug": "yamaha-ga15ii",
-    "categoria": "Amplificadores",
-    "marca": "Yamaha",
-    "modelo": "GA15ii",
-    "descripcion": "",
-    "imagen": "https://www.musicalesdoris.com/cdn/shop/products/cc360735baaf_1280x.jpg?v=1664062571",
-    "precio": 699000
-  }
-]
+{
+ "products":  [
+    {
+      "id": 101,
+      "slug": "fender-stratocaster",
+      "categoria": "Guitarras",
+      "marca": "Fender",
+      "modelo": "Stratocaster",
+      "descripcion": "La mas conocida guitarra electrica en el mercado, marcada por su excelencia sonora y calidad de fabricación.",
+      "imagen": "https://audiomusicacl.vtexassets.com/arquivos/ids/191413/1-guitarra-electrica-fender-american-vintage-ii-1957-stratocaster-2-color-sunburst-1113234.jpg",
+      "precio": "1.099.990"
+    },
+    {
+      "id": 102,
+      "slug": "gibson-les-paul",
+      "categoria": "Guitarras",
+      "marca": "Gibson",
+      "modelo": "Les Paul",
+      "descripcion": "Gran guitarra electrica, conocida por su sonido y estabilidad.",
+      "imagen": "https://audiomusicacl.vtexassets.com/arquivos/ids/186826/1-guitarra-electrica-gibson-les-paul-custom-ebony-gloss-1109687.jpg?v=638357381113930000",
+      "precio": "3.290.000"
+    },
+    {
+      "id": 103,
+      "slug": "paul-rs-se-standard",
+      "categoria": "Guitarras",
+      "marca": "Paul",
+      "modelo": "RS SE Standard",
+      "descripcion": "Una de las mejores guitarras electricas, posee una gran ganancia sonora.",
+      "imagen": "https://audiomusicacl.vtexassets.com/arquivos/ids/180304/1110741.jpg?v=638043127608870000",
+      "precio": "1.819.990"
+    },
+    {
+      "id": 104,
+      "slug": "yamaha-pacifica-112v",
+      "categoria": "Guitarras",
+      "marca": "Yamaha",
+      "modelo": "Pacifica 112v",
+      "descripcion": "De las mejores guitarras electricas de gama media, con gran calidad de resonancia y poder adaptativo para realizar riffs.",
+      "imagen": "https://cdnx.jumpseller.com/instruments/image/11150530/thumb/719/719?1648249180",
+      "precio": "649.000"
+    },
+    {
+      "id": 105,
+      "slug": "fender-stratocaster-player-ii",
+      "categoria": "Guitarras",
+      "marca": "Fender",
+      "modelo": "Stratocaster Player II",
+      "descripcion": "Modelo Stratocaster, la flamante player II, de las mejores en su categoria, especialmente para rock y pop.",
+      "imagen": "https://audiomusicacl.vtexassets.com/arquivos/ids/194227-800-800?v=638614862547900000&width=800&height=800&aspect=true",
+      "precio": "1.099.990"
+    },
+    {
+      "id": 106,
+      "slug": "gibson-les-paul-standard-50s",
+      "categoria": "Guitarras",
+      "marca": "Gibson",
+      "modelo": "Les Paul Standard 50s",
+      "descripcion": "Guitarra Gibson Les Paul, en su version estandar, posee un estilo enfocado en los cincuentas (50's).",
+      "imagen": "https://audiomusicacl.vtexassets.com/arquivos/ids/188762/1-guitarra-electrica-gibson-les-paul-standard-50s-figured-top-60s-cherry-1112551.jpg?v=638440391249730000",
+      "precio": "3.141.000"
+    },
+    {
+      "id": 201,
+      "slug": "fender-mustang-bass",
+      "categoria": "Bajos",
+      "marca": "Fender",
+      "modelo": "Mustang Bass",
+      "descripcion": "De la marca Fender, uno de sus mejores bajos, gran sonoridad y calidad.",
+      "imagen": "https://www.todobajos.com/19454-superlarge_default/fender-limited-edition-mustang-bass-shm.jpg",
+      "precio": "1.999.990"
+    },
+    {
+      "id": 202,
+      "slug": "cort-A5p",
+      "categoria": "Bajos",
+      "marca": "Cort",
+      "modelo": "A5p",
+      "descripcion": "De la marca Cort, con su modelo A5P, gran calidad y sonido.",
+      "imagen": "https://es.euroguitar.com/images/products/cort/a5-plus-scms-optg-artisan-bartolini-pan-med-149062.jpg",
+      "precio": "829.000"
+    },
+    {
+      "id": 203,
+      "slug": "warwick-thumb",
+      "categoria": "Bajos",
+      "marca": "Warwick",
+      "modelo": "Thumb",
+      "descripcion": "Bajo Marca Warwick, modelo thumb, especial para alguien que quiera exigirle mas a su bajo.",
+      "imagen": "https://r2.gear4music.com/media/43/439436/600/preview.jpg",
+      "precio": "199.990"
+    },
+    {
+      "id": 204,
+      "slug": "yamaha-trbx-304",
+      "categoria": "Bajos",
+      "marca": "Yamaha",
+      "modelo": "TRBX 304",
+      "descripcion": "Bajo Yamaha: Es un bajo de gran potencia.",
+      "imagen": "https://cialfaro.com/cdn/shop/files/19_DM0020168.jpg?v=1716166735",
+      "precio": "649.000"
+    },
+    {
+      "id": 205,
+      "slug": "spector-euro4-lx",
+      "categoria": "Bajos",
+      "marca": "Spector",
+      "modelo": "Euro 4 LX",
+      "descripcion": "Bajo Spector, modelo Euro four xl, gran potencia sonora.",
+      "imagen": "https://m.media-amazon.com/images/I/61K+BpgUhQL.jpg",
+      "precio": "2.585.000"
+    },
+    {
+      "id": 206,
+      "slug": "ibanez-gsr205bf",
+      "categoria": "Bajos",
+      "marca": "Ibañez",
+      "modelo": "GSR205BF 5 Cuerdas",
+      "descripcion": "Gran modelo de bajos maca Ibañez, buena potencia.",
+      "imagen": "https://audiomusicacl.vtexassets.com/arquivos/ids/185988/1-3-bajo-electrico-ibanez-rgb300-black-flat-212863.jpg",
+      "precio": "349.990"
+    },
+    {
+      "id": 301,
+      "slug": "fender-twin-reverb",
+      "categoria": "Amplificadores",
+      "marca": "Fender",
+      "modelo": "Twin Reverb",
+      "descripcion": "Amplificador con mucha potencia y sonido.",
+      "imagen": "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/_32/323667/18902722_800.jpg",
+      "precio": "2.999.900"
+    },
+    {
+      "id": 302,
+      "slug": "marshall-jcm800",
+      "categoria": "Amplificadores",
+      "marca": "Marshall",
+      "modelo": "JCM800",
+      "descripcion": "Amplificador con mucha potencia y ganancia",
+      "imagen": "https://bimotordj.com/image/cache/catalog/STUDIOCLASSICSC20H/1-1200x1200.jpg",
+      "precio": "2.299.900"
+    },
+    {
+      "id": 303,
+      "slug": "vox-ac30",
+      "categoria": "Amplificadores",
+      "marca": "Vox",
+      "modelo": "AC30",
+      "descripcion": "Amplificador con mucha potencia y estabilidad.",
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_829190-MLU70185876343_062023-O.webp",
+      "precio": "1.326.380"
+    },
+    {
+      "id": 304,
+      "slug": "yamaha-ga15ii",
+      "categoria": "Amplificadores",
+      "marca": "Yamaha",
+      "modelo": "GA15ii",
+      "descripcion": "Amplificador con mucha potencia y sonoridad",
+      "imagen": "https://www.musicalesdoris.com/cdn/shop/products/cc360735baaf_1280x.jpg?v=1664062571.",
+      "precio": "69.920"
+    },
+    {
+      "id": 305,
+      "slug": "laney-lx20r",
+      "categoria": "Amplificadores",
+      "marca": "Laney",
+      "modelo": "LX20R",
+      "descripcion": "Amplificador Laney, gran potencia para su reducida talla, estabilidad sonora.",
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_728726-MLA96177708045_102025-F.webp",
+      "precio": "145.990"
+    },
+    {
+      "id": 306,
+      "slug": "marshall-mg15g",
+      "categoria": "Amplificadores",
+      "marca": "Marshall",
+      "modelo": "MG15G",
+      "descripcion": "Amplificador con gran ganancia sonora, tiene diferentes modos y es especial para personas quienes estan comenzando en el ambiente.",
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_605864-MLC93222661973_092025-F.webp",
+      "precio": "114.990"
+    }
+  ]
+}

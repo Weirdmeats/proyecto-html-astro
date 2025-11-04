@@ -23,7 +23,7 @@ const { producto } = Astro.props;
         <div class="text-xl font-bold text-gris-oscuro">$ {producto.precio} CLP</div>
 
         <input type="number" placeholder="Cantidad" class="w-full max-w-xs px-4 py-2 rounded-full border border-gray-300 text-gris-oscuro"/>
-
-      <button class="bg-gris-oscuro hover:bg-slate-500 text-blanco font-semibold px-6 py-3 rounded-xl w-full max-w-xs">Agregar al carrito</button>
+      <!--usamos la clase de tailwind tipo btn cursor-pointer -->
+      <button class="cursor-pointer bg-gris-oscuro hover:bg-slate-500 text-blanco font-semibold px-6 py-3 rounded-xl w-full max-w-xs">Agregar al carrito</button>
   </div>
 </section>

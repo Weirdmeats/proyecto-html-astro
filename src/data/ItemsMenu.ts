@@ -10,15 +10,15 @@ export const ItemNavMenu: ItemNavMenuInterface[] = [
         link: ""
     },
     {
-        href: "/Servicios", texto: "Servicios", 
+        href: "/servicios", texto: "Servicios", 
         link: ""
     },
     {
-        href: "/Blog", texto: "Tienda", 
+        href: "/blog", texto: "Tienda", 
         link: ""
     },
     {
-        href: "/Contacto", texto: "Contacto", 
+        href: "/contacto", texto: "Contacto", 
         link: ""
     },
 ]
