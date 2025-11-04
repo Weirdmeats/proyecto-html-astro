@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro'
 import ProductCardComponent from '../components/ProductCardComponent.astro'
 import TitlesComponent from '../components/TitlesComponent.astro'
+import ParrafoComponent from '../components/ParrafoComponent.astro'
 //
 
 ---
@@ -9,8 +10,10 @@ import TitlesComponent from '../components/TitlesComponent.astro'
 <Layout>
     
     <!--tienda con productos-->
-    <main class="bg-morado-oscuro pt-20 pb-20">
-        <TitlesComponent titulo='Instrumentos musicales a la orden del cliente!' estilo='text-semibold text-6xl text-blanco text-center font-bold' tamaño='h1'/>
+    <main class="bg-morado-oscuro pt-20 pb-20 gap-11">
+        <TitlesComponent titulo='Instrumentos musicales a la orden del cliente!' estilo='font-semibold text-6xl text-blanco text-center font-bold' tamaño='h1'/>
+        <ParrafoComponent parrafo='Gran variedad de instrumentos musicales, guitarras, bajos, amplificadores, de muchas marcas y modelos.' estilo='font-semibold text-xl text-blanco text-center font-bold'/>
+        <ParrafoComponent parrafo='Para consultar sobre algun instrumento y su posibilidad de importacion, por favor dirigirse al apartado "Contacto"' estilo='font-semibold text-xl text-blanco text-center font-bold'/>
         <!--lista de productcard -->
         <ProductCardComponent/>
                 
