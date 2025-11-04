@@ -41,10 +41,12 @@ Abrir un IDE de su agrado, abrir la terminar y escribir los siguentes pasos:
 ```
 PROYECTO-HTML-ASTRO/
 ├── public/
+│   ├── favicon.ico
+│   ├── favicon.svg
 ├── src/
 │   ├── assets/
-│   │   ├── favicon.ico
-│   │   ├── favicon.svg
+│   │   ├── astro.svg
+│   │   ├── background.svg
 │   ├── components/
 │   │   ├── FooterComponent.astro
 │   │   ├── HeaderComponent.astro
@@ -68,7 +70,6 @@ PROYECTO-HTML-ASTRO/
 │   │   ├── Servicios.astro
 │   ├── styles/
 │   │   ├── global.css
-├── .env
 ├── .gitignore
 ├── astro.config.mjs
 ├── package.json
