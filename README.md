@@ -4,7 +4,7 @@ Este proyecto fue realizado con el fin de crear una página con el framework "As
 
 ASTRO+TAILWIND4/VITE
 # Que contiene el proyecto?
-El proyecto contiene HTML, ASTRO, JAVASCRIPT, CSS con TAILWIND 4
+El proyecto contiene HTML, ASTRO, JAVASCRIPT, TYPESCRIPT, CSS con TAILWIND 4
 Consta de 4 páginas principales, una base de datos JSON API de prueba, componentes reutilizables, código optimizado, estilos y fuentes personalizadas.
 
 # SIMULAMOS UNA API CON JSONPLACEHOLDER MEDIANTE EL SIGUENTE LINK
@@ -13,16 +13,30 @@ Consta de 4 páginas principales, una base de datos JSON API de prueba, componen
 # Como inicializar el proyecto
 Abrir un IDE de su agrado, abrir la terminar y escribir los siguentes pasos:
 
+
+
 1./ Para instalar el proyecto:
+
+
     npm install
 
+
+
+
 2./ Para hacer funcionar el proyecto:
+
+
     npm run dev
 
 
+3./ Presionar el link local generado, es similar a este:
 
 
-Estructura del Proyecto
+    http://localhost:4321/
+
+
+
+# Estructura del Proyecto
 
 ```
 PROYECTO-HTML-ASTRO/
