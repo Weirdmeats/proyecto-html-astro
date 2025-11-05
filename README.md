@@ -64,10 +64,10 @@ PROYECTO-HTML-ASTRO/
 │   │   ├── Layout.astro
 │   ├── pages/
 │   │   ├── [slug].astro
-│   │   ├── Blog.astro
-│   │   ├── Contacto.astro
+│   │   ├── blog.astro
+│   │   ├── contacto.astro
 │   │   ├── index.astro
-│   │   ├── Servicios.astro
+│   │   ├── servicios.astro
 │   ├── styles/
 │   │   ├── global.css
 ├── .gitignore
