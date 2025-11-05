@@ -63,7 +63,8 @@ PROYECTO-HTML-ASTRO/
 │   ├── layouts/
 │   │   ├── Layout.astro
 │   ├── pages/
-│   │   ├── [slug].astro
+│   │   ├──products
+│   │   │    ├──[slug].astro
 │   │   ├── blog.astro
 │   │   ├── contacto.astro
 │   │   ├── index.astro
